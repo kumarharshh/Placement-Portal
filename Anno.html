@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="styless.css">
+    <title>Document</title>
+</head>
+<body class="full">
+    <nav class="navbar navbar-dark bg-dark" style="display:flex !important;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <h1>Teacher's Portal</h1>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand btn btn-primary" href="index.html">Logout</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Anno.html">Announcement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="list.html">List/Filter/Block-UnBlock</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="createDrive.html">Create Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="viewDrive.html">View Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="summary.html">Summary</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <div id="anno" class="grid">
+        <h2 class="inner-headings">ANNOUNCEMENT</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-profile-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-profile">Upload Announcement</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">View Announcement</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                  <form class="row g-3">
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Announcement Type</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select ...</option>
+                        <option value="1">Placement Related</option>
+                        <option value="2">Academic Related</option>
+                        <option value="3">General</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Date</label>
+                      <input type="date" class="form-control" id="inputCity" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Heading</label>
+                      <input type="text" class="form-control" id="inputCity" placeholder="">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputCity" class="form-label">Announcement</label>
+                      <input type="text" class="form-control" id="inputCity" placeholder="">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputState" class="form-label">Program Stream</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="GEN">B.Tech CSE/IT</option>
+                        <option value="OBC">M.Tech CSE/IT</option>
+                        <option value="SC">B.Tech EEE</option>
+                        <option>MBA</option>
+                        <option>All</option>
+                      </select>
+                    </div>
+                  </form>
+                  <br>
+                <div class="col-12">
+                    <button type="submit" id="publishDrive" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                  <div class="grey">
+                    <p>
+                        <strong>Final Result of Full Term Internship Drive by BROADRIDGE FINANCIAL SOLUTIONS INDIA PRIVATE LIMITED</strong>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tenetur dolor optio ad at nostrum nisi in tempore voluptates, <strong>earum voluptate tempora modi sit adipisci itaque. Aliquid debitis beatae similique!</strong>
+                        <br>
+                        <br>
+                        <strong>** 12007158</strong>
+                        <br>
+                        <b>Lorem Lorem</b>
+                        <br>
+                        <b>Uploaded By:
+                            <br>
+                        Harsh Kumar 
+                        <br>
+                        12007258
+                        </b>
+                    </p>
+                </div>
+                <div class="white">
+                    <p>
+                        <b>Final Result of One-year Internship Drive by YASH TECHNOLOGIES</b>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tenetur dolor optio ad at nostrum nisi in tempore voluptates, <strong>earum voluptate tempora modi sit adipisci itaque. Aliquid debitis beatae similique!</strong>
+                        <br>
+                        <br>
+                        <strong>** 12007158</strong>
+                        <br>
+                        <b>Lorem Lorem</b>
+                        <br>
+                        <b>Uploaded By:
+                            <br>
+                        Harsh Kumar 
+                        <br>
+                        12007258
+                        </b>
+                    </p>
+                </div>
+                <div class="grey">
+                  <p>
+                      <strong>Final Result of Full Term Internship Drive by BROADRIDGE FINANCIAL SOLUTIONS INDIA PRIVATE LIMITED</strong>
+                      <br>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tenetur dolor optio ad at nostrum nisi in tempore voluptates, <strong>earum voluptate tempora modi sit adipisci itaque. Aliquid debitis beatae similique!</strong>
+                      <br>
+                      <br>
+                      <strong>** 12007158</strong>
+                      <br>
+                      <b>Lorem Lorem</b>
+                      <br>
+                      <b>Uploaded By:
+                          <br>
+                      Harsh Kumar 
+                      <br>
+                      12007258
+                      </b>
+                  </p>
+              </div>
+              <div class="white">
+                  <p>
+                      <b>Final Result of One-year Internship Drive by YASH TECHNOLOGIES</b>
+                      <br>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tenetur dolor optio ad at nostrum nisi in tempore voluptates, <strong>earum voluptate tempora modi sit adipisci itaque. Aliquid debitis beatae similique!</strong>
+                      <br>
+                      <br>
+                      <strong>** 12007158</strong>
+                      <br>
+                      <b>Lorem Lorem</b>
+                      <br>
+                      <b>Uploaded By:
+                          <br>
+                      Harsh Kumar 
+                      <br>
+                      12007258
+                      </b>
+                  </p>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+  document.getElementById("publishDrive").addEventListener("click",function(){
+    alert("Announcement Successfully created");
+  });
+</script>
+</body>
+</html>
